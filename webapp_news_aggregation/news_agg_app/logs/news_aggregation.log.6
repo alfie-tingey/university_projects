@@ -1,0 +1,106 @@
+2020-05-13 16:59:47,981 ERROR: Exception on /category2/Politics [GET] [in /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py:1891]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask_login/utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/alfredtingey/news-aggregation-system-master/news-aggregation-system/news_agg_app/app/routes.py", line 276, in category2
+    yesterday = today - '20' + timedelta(days=1).strftime('%y%m%d')
+TypeError: unsupported operand type(s) for -: 'str' and 'str'
+2020-05-13 16:59:52,657 ERROR: Exception on /category2/Politics [GET] [in /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py:1891]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask_login/utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/alfredtingey/news-aggregation-system-master/news-aggregation-system/news_agg_app/app/routes.py", line 276, in category2
+    yesterday = today - '20' + timedelta(days=1).strftime('%y%m%d')
+TypeError: unsupported operand type(s) for -: 'str' and 'str'
+2020-05-13 17:01:43,429 INFO: News Aggregation startup [in /Users/alfredtingey/news-aggregation-system-master/news-aggregation-system/news_agg_app/app/__init__.py:61]
+2020-05-13 17:01:57,460 ERROR: Exception on /category2/Politics [GET] [in /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py:1891]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask_login/utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/alfredtingey/news-aggregation-system-master/news-aggregation-system/news_agg_app/app/routes.py", line 277, in category2
+    yesterday = today_normal_format-timedelta(days=1)
+NameError: name 'timedelta' is not defined
+2020-05-13 17:02:13,530 INFO: News Aggregation startup [in /Users/alfredtingey/news-aggregation-system-master/news-aggregation-system/news_agg_app/app/__init__.py:61]
+2020-05-13 18:20:38,939 INFO: News Aggregation startup [in /Users/alfredtingey/news-aggregation-system-master/news-aggregation-system/news_agg_app/app/__init__.py:61]
+2020-05-13 18:33:36,438 INFO: News Aggregation startup [in /Users/alfredtingey/news-aggregation-system-master/news-aggregation-system/news_agg_app/app/__init__.py:61]
+2020-05-13 19:04:16,119 INFO: News Aggregation startup [in /Users/alfredtingey/news-aggregation-system/news_agg_app/app/__init__.py:61]
+2020-05-13 19:04:26,709 ERROR: Exception on /news_sites [GET] [in /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py:1891]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask_login/utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/alfredtingey/news-aggregation-system/news_agg_app/app/routes.py", line 239, in news_sites
+    news = news_agg.get_news()
+  File "/Users/alfredtingey/news-aggregation-system/news_agg_app/app/models.py", line 99, in get_news
+    with open('/Users/alfredtingey/news-aggregation-system-master/news-aggregation-system/news_agg_app/Backupnews_in_20200417.json','r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/alfredtingey/news-aggregation-system-master/news-aggregation-system/news_agg_app/Backupnews_in_20200417.json'
+2020-05-13 19:07:09,794 INFO: News Aggregation startup [in /Users/alfredtingey/news-aggregation-system/news_agg_app/app/__init__.py:61]
+2020-05-13 19:07:24,590 ERROR: Exception on /news_sites [GET] [in /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py:1891]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask_login/utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/alfredtingey/news-aggregation-system/news_agg_app/app/routes.py", line 239, in news_sites
+    news = news_agg.get_news()
+  File "/Users/alfredtingey/news-aggregation-system/news_agg_app/app/models.py", line 99, in get_news
+    with open('/Users/alfredtingey/news-aggregation-system-master/news-aggregation-system/news_agg_app/Backupnews_in_20200417.json','r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/alfredtingey/news-aggregation-system-master/news-aggregation-system/news_agg_app/Backupnews_in_20200417.json'
+2020-05-13 19:07:59,298 INFO: News Aggregation startup [in /Users/alfredtingey/news-aggregation-system/news_agg_app/app/__init__.py:61]

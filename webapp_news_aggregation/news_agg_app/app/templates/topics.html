@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block app_content %}
+    <h1>Latest topics in {{category}}</h1>
+    {% if form %}
+    <form action="" method="post">
+        {{ form.hidden_tag() }}
+        <p>
+            {{ form.post.label }}<br>
+            {{ form.post(cols=32, rows=4) }}<br>
+            {% for error in form.post.errors %}
+            <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+        </p>
+        <p>{{ form.submit() }}</p>
+    </form>
+    {% endif %}
+    <body>
+  						{%for topic in topics_news%}
+              <br>
+              <table class="table table-hover">
+                   <tr>
+                     <td width="0px">
+                      <font size="4"><a href="{{ url_for('search_topics', topic = topic, category = category) }}">{{topic}}</a></font>
+                    </td>
+                  </tr>
+            </table>
+            {%endfor%}
+  </body>
+{% endblock %}

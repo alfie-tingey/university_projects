@@ -1,0 +1,111 @@
+2020-05-15 21:22:54,253 INFO: News Aggregation startup [in /Users/alfredtingey/news-aggregation-system/news_agg_app/app/__init__.py:61]
+2020-05-15 21:23:10,311 ERROR: Exception on /category2/Politics [GET] [in /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py:1891]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask_login/utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/alfredtingey/news-aggregation-system/news_agg_app/app/routes.py", line 320, in category2
+    if new_sum[0][new_sum[0].index(item)] != ' ':
+ValueError: substring not found
+2020-05-15 21:24:18,055 INFO: News Aggregation startup [in /Users/alfredtingey/news-aggregation-system/news_agg_app/app/__init__.py:61]
+2020-05-15 21:24:28,170 ERROR: Exception on /category2/Politics [GET] [in /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py:1891]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask_login/utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/alfredtingey/news-aggregation-system/news_agg_app/app/routes.py", line 320, in category2
+    if new_sum[0][new_sum[0].index(item) - 1] != ' ':
+ValueError: substring not found
+2020-05-15 21:28:00,310 INFO: News Aggregation startup [in /Users/alfredtingey/news-aggregation-system/news_agg_app/app/__init__.py:61]
+2020-05-15 21:28:10,437 ERROR: Exception on /category2/Politics [GET] [in /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py:1891]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask_login/utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/alfredtingey/news-aggregation-system/news_agg_app/app/routes.py", line 320, in category2
+    if new_sum[new_sum.index(item - 1)] != ' ':
+TypeError: unsupported operand type(s) for -: 'str' and 'int'
+2020-05-15 21:28:32,776 INFO: News Aggregation startup [in /Users/alfredtingey/news-aggregation-system/news_agg_app/app/__init__.py:61]
+2020-05-15 21:30:16,335 INFO: News Aggregation startup [in /Users/alfredtingey/news-aggregation-system/news_agg_app/app/__init__.py:61]
+2020-05-15 21:31:16,127 INFO: News Aggregation startup [in /Users/alfredtingey/news-aggregation-system/news_agg_app/app/__init__.py:61]
+2020-05-15 21:31:53,681 INFO: News Aggregation startup [in /Users/alfredtingey/news-aggregation-system/news_agg_app/app/__init__.py:61]
+2020-05-15 21:33:44,904 INFO: News Aggregation startup [in /Users/alfredtingey/news-aggregation-system/news_agg_app/app/__init__.py:61]
+2020-05-15 21:35:18,199 INFO: News Aggregation startup [in /Users/alfredtingey/news-aggregation-system/news_agg_app/app/__init__.py:61]
+2020-05-15 21:36:33,142 INFO: News Aggregation startup [in /Users/alfredtingey/news-aggregation-system/news_agg_app/app/__init__.py:61]
+2020-05-15 21:39:00,014 INFO: News Aggregation startup [in /Users/alfredtingey/news-aggregation-system/news_agg_app/app/__init__.py:61]
+2020-05-15 21:39:11,053 ERROR: Exception on /category2/Politics [GET] [in /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py:1891]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask_login/utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/alfredtingey/news-aggregation-system/news_agg_app/app/routes.py", line 320, in category2
+    if item.isupper() and new_sum[new_sum.index(item) - 1] != ' ':
+ValueError: substring not found
+2020-05-15 21:41:07,992 INFO: News Aggregation startup [in /Users/alfredtingey/news-aggregation-system/news_agg_app/app/__init__.py:61]
+2020-05-15 21:41:17,915 ERROR: Exception on /category2/Politics [GET] [in /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py:1891]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask_login/utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/alfredtingey/news-aggregation-system/news_agg_app/app/routes.py", line 320, in category2
+    index = new_sum.index(item)
+ValueError: substring not found
+2020-05-15 21:43:12,238 INFO: News Aggregation startup [in /Users/alfredtingey/news-aggregation-system/news_agg_app/app/__init__.py:61]
+2020-05-15 21:44:51,925 INFO: News Aggregation startup [in /Users/alfredtingey/news-aggregation-system/news_agg_app/app/__init__.py:61]
+2020-05-16 15:08:39,722 INFO: News Aggregation startup [in /Users/alfredtingey/news-aggregation-system/news_agg_app/app/__init__.py:61]
+2020-05-16 15:12:07,366 INFO: News Aggregation startup [in /Users/alfredtingey/news-aggregation-system/news_agg_app/app/__init__.py:61]

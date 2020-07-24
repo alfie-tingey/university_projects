@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block app_content %}
+    <h1>{{ _('Hi, %(username)s! Click on your desired news category:', username=current_user.username) }}</h1>
+    {% if form %}
+    <form action="" method="post">
+        {{ form.hidden_tag() }}
+        <p>
+            {{ form.post.label }}<br>
+            {{ form.post(cols=32, rows=4) }}<br>
+            {% for error in form.post.errors %}
+            <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+        </p>
+        <p>{{ form.submit() }}</p>
+    </form>
+    {% endif %}
+    <body>
+    <p>
+    <br>
+    <!-- </p> -->
+    <!-- {% for category in news %}
+        {% include '_news.html' %}
+    {% endfor %} -->
+    {% include '_news.html' %}
+    <br>
+  </body>
+{% endblock %}

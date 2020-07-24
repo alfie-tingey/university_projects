@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+
+{% block app_content %}
+    <h1>{{'Search Results'}}</h1>
+    {% if form %}
+    <form action="" method="post">
+        {{ form.hidden_tag() }}
+        <p>
+            {{ form.post.label }}<br>
+            {{ form.post(cols=32, rows=4) }}<br>
+            {% for error in form.post.errors %}
+            <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+        </p>
+        <p>{{ form.submit() }}</p>
+    </form>
+    {% endif %}
+        <body>
+          {%for item in news%}
+          <br>
+          <table class="table table-hover">
+               <tr>
+                 <td width="0px">
+                   <span id="item{{ item[5].id }}"> <a href={{item[0]}}>{{item[1]}} </a> </span>
+                   {% if item[3] != 'Der Spiegel' %}
+                  <br>
+                  <br>
+                  {{item[2]}}
+                  {% endif %}
+                  <br>
+                  <br>
+                  <img src={{item[6]}} alt="Simply Easy Learning"; width="200"; height="80">
+                  <br>
+                  <br>
+                  {% if item[4] and item[4] != g.locale %}
+                    <span id="translation{{ item[5].id }}">
+                        <a href="javascript:translate(
+                                    '#item{{ item[5].id }}',
+                                    '#translation{{ item[5].id }}',
+                                    '{{ item[4] }}',
+                                    '{{ g.locale }}');">{{ _('Translate the title') }}</a>
+                    </span>
+                  {% endif %}
+                <br><br>
+                {{item[3]}}
+                </td>
+              </tr>
+        </table>
+        {%endfor%}
+      </body>
+{% endblock %}

@@ -1,0 +1,88 @@
+2020-05-10 19:38:55,944 ERROR: Exception on /recommend [GET] [in /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py:1891]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask_login/utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/alfredtingey/news-aggregation-system-master/news-aggregation-system/news_agg_app/app/routes.py", line 493, in recommend
+    summary = str_pro(summary)
+NameError: name 'str_pro' is not defined
+2020-05-10 19:39:49,675 INFO: News Aggregation startup [in /Users/alfredtingey/news-aggregation-system-master/news-aggregation-system/news_agg_app/app/__init__.py:61]
+2020-05-10 19:42:13,680 INFO: News Aggregation startup [in /Users/alfredtingey/news-aggregation-system-master/news-aggregation-system/news_agg_app/app/__init__.py:61]
+2020-05-10 19:47:14,978 INFO: News Aggregation startup [in /Users/alfredtingey/news-aggregation-system-master/news-aggregation-system/news_agg_app/app/__init__.py:61]
+2020-05-10 19:54:26,900 INFO: News Aggregation startup [in /Users/alfredtingey/news-aggregation-system-master/news-aggregation-system/news_agg_app/app/__init__.py:61]
+2020-05-10 20:58:00,894 INFO: News Aggregation startup [in /Users/alfredtingey/news-aggregation-system-master/news-aggregation-system/news_agg_app/app/__init__.py:61]
+2020-05-10 20:58:32,025 INFO: News Aggregation startup [in /Users/alfredtingey/news-aggregation-system-master/news-aggregation-system/news_agg_app/app/__init__.py:61]
+2020-05-10 21:00:14,234 INFO: News Aggregation startup [in /Users/alfredtingey/news-aggregation-system-master/news-aggregation-system/news_agg_app/app/__init__.py:61]
+2020-05-13 16:54:13,054 INFO: News Aggregation startup [in /Users/alfredtingey/news-aggregation-system-master/news-aggregation-system/news_agg_app/app/__init__.py:61]
+2020-05-13 16:54:29,281 ERROR: Exception on /category2/Politics [GET] [in /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py:1891]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask_login/utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/alfredtingey/news-aggregation-system-master/news-aggregation-system/news_agg_app/app/routes.py", line 303, in category2
+    new_list = sorted(new_list, key=lambda x: x[7])
+TypeError: '<' not supported between instances of 'NoneType' and 'NoneType'
+2020-05-13 16:56:33,192 INFO: News Aggregation startup [in /Users/alfredtingey/news-aggregation-system-master/news-aggregation-system/news_agg_app/app/__init__.py:61]
+2020-05-13 16:56:46,655 ERROR: Exception on /category2/Politics [GET] [in /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py:1891]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask_login/utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/alfredtingey/news-aggregation-system-master/news-aggregation-system/news_agg_app/app/routes.py", line 275, in category2
+    yesterday = today - datetime.timedelta(days=1)
+AttributeError: type object 'datetime.datetime' has no attribute 'timedelta'
+2020-05-13 16:58:11,991 INFO: News Aggregation startup [in /Users/alfredtingey/news-aggregation-system-master/news-aggregation-system/news_agg_app/app/__init__.py:61]
+2020-05-13 16:58:24,327 ERROR: Exception on /category2/Politics [GET] [in /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py:1891]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask_login/utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/alfredtingey/news-aggregation-system-master/news-aggregation-system/news_agg_app/app/routes.py", line 276, in category2
+    yesterday = today - datetime.timedelta(days=1)
+AttributeError: type object 'datetime.datetime' has no attribute 'timedelta'
+2020-05-13 16:58:44,019 INFO: News Aggregation startup [in /Users/alfredtingey/news-aggregation-system-master/news-aggregation-system/news_agg_app/app/__init__.py:61]
+2020-05-13 16:59:41,193 INFO: News Aggregation startup [in /Users/alfredtingey/news-aggregation-system-master/news-aggregation-system/news_agg_app/app/__init__.py:61]

@@ -1,0 +1,111 @@
+2020-05-15 20:55:56,428 ERROR: Exception on /topics/Politics [GET] [in /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py:1891]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask_login/utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/alfredtingey/news-aggregation-system/news_agg_app/app/routes.py", line 408, in topics
+    list_topice_only_sorted.remove('Rule People')
+NameError: name 'list_topice_only_sorted' is not defined
+2020-05-15 20:56:10,069 INFO: News Aggregation startup [in /Users/alfredtingey/news-aggregation-system/news_agg_app/app/__init__.py:61]
+2020-05-15 20:56:20,198 ERROR: Exception on /topics/Politics [GET] [in /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py:1891]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask_login/utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/alfredtingey/news-aggregation-system/news_agg_app/app/routes.py", line 410, in topics
+    list_topics_only_sorted.remove('School School', 'School')
+TypeError: remove() takes exactly one argument (2 given)
+2020-05-15 20:56:41,538 INFO: News Aggregation startup [in /Users/alfredtingey/news-aggregation-system/news_agg_app/app/__init__.py:61]
+2020-05-15 20:56:50,956 ERROR: Exception on /topics/Politics [GET] [in /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py:1891]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask_login/utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/alfredtingey/news-aggregation-system/news_agg_app/app/routes.py", line 411, in topics
+    print(list_only_topics_sorted)
+NameError: name 'list_only_topics_sorted' is not defined
+2020-05-15 20:57:14,332 INFO: News Aggregation startup [in /Users/alfredtingey/news-aggregation-system/news_agg_app/app/__init__.py:61]
+2020-05-15 20:58:11,404 INFO: News Aggregation startup [in /Users/alfredtingey/news-aggregation-system/news_agg_app/app/__init__.py:61]
+2020-05-15 21:02:34,037 INFO: News Aggregation startup [in /Users/alfredtingey/news-aggregation-system/news_agg_app/app/__init__.py:61]
+2020-05-15 21:03:33,889 INFO: News Aggregation startup [in /Users/alfredtingey/news-aggregation-system/news_agg_app/app/__init__.py:61]
+2020-05-15 21:07:26,614 INFO: News Aggregation startup [in /Users/alfredtingey/news-aggregation-system/news_agg_app/app/__init__.py:61]
+2020-05-15 21:07:44,230 ERROR: Exception on /category2/Politics [GET] [in /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py:1891]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask_login/utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/alfredtingey/news-aggregation-system/news_agg_app/app/routes.py", line 318, in category2
+    if item in new_sum[0][-10:].isupper():
+NameError: name 'item' is not defined
+2020-05-15 21:09:12,898 INFO: News Aggregation startup [in /Users/alfredtingey/news-aggregation-system/news_agg_app/app/__init__.py:61]
+2020-05-15 21:09:24,764 ERROR: Exception on /category2/Politics [GET] [in /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py:1891]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask_login/utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/alfredtingey/news-aggregation-system/news_agg_app/app/routes.py", line 320, in category2
+    new_sum = new_sum.split(item)
+AttributeError: 'list' object has no attribute 'split'
+2020-05-15 21:09:44,306 INFO: News Aggregation startup [in /Users/alfredtingey/news-aggregation-system/news_agg_app/app/__init__.py:61]
+2020-05-15 21:11:59,373 INFO: News Aggregation startup [in /Users/alfredtingey/news-aggregation-system/news_agg_app/app/__init__.py:61]
+2020-05-15 21:13:01,134 INFO: News Aggregation startup [in /Users/alfredtingey/news-aggregation-system/news_agg_app/app/__init__.py:61]
+2020-05-15 21:14:39,810 INFO: News Aggregation startup [in /Users/alfredtingey/news-aggregation-system/news_agg_app/app/__init__.py:61]
+2020-05-15 21:17:34,551 INFO: News Aggregation startup [in /Users/alfredtingey/news-aggregation-system/news_agg_app/app/__init__.py:61]
+2020-05-15 21:18:05,277 INFO: News Aggregation startup [in /Users/alfredtingey/news-aggregation-system/news_agg_app/app/__init__.py:61]
+2020-05-15 21:21:45,694 INFO: News Aggregation startup [in /Users/alfredtingey/news-aggregation-system/news_agg_app/app/__init__.py:61]
+2020-05-15 21:21:58,194 INFO: News Aggregation startup [in /Users/alfredtingey/news-aggregation-system/news_agg_app/app/__init__.py:61]

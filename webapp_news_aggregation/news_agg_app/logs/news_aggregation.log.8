@@ -1,0 +1,109 @@
+2020-05-10 19:09:22,579 ERROR: Exception on /recommend [GET] [in /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py:1891]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask_login/utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/alfredtingey/news-aggregation-system-master/news-aggregation-system/news_agg_app/app/routes.py", line 442, in recommend
+    print(curren_user.id)
+NameError: name 'curren_user' is not defined
+2020-05-10 19:10:49,784 INFO: News Aggregation startup [in /Users/alfredtingey/news-aggregation-system-master/news-aggregation-system/news_agg_app/app/__init__.py:61]
+2020-05-10 19:11:13,855 ERROR: Exception on /recommend [GET] [in /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py:1891]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask_login/utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/alfredtingey/news-aggregation-system-master/news-aggregation-system/news_agg_app/app/routes.py", line 455, in recommend
+    rec_sys_routes.create_key_word_user_db(user_key_words, date)
+  File "/Users/alfredtingey/news-aggregation-system-master/news-aggregation-system/news_agg_app/app/rec_sys_routes.py", line 74, in create_key_word_user_db
+    results_df = pd.concat(results)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/pandas/core/reshape/concat.py", line 255, in concat
+    sort=sort,
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/pandas/core/reshape/concat.py", line 304, in __init__
+    raise ValueError("No objects to concatenate")
+ValueError: No objects to concatenate
+2020-05-10 19:13:41,359 INFO: News Aggregation startup [in /Users/alfredtingey/news-aggregation-system-master/news-aggregation-system/news_agg_app/app/__init__.py:61]
+2020-05-10 19:14:07,037 ERROR: Exception on /keywords [POST] [in /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py:1891]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask_login/utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/alfredtingey/news-aggregation-system-master/news-aggregation-system/news_agg_app/app/routes.py", line 490, in keywords
+    keywords = Keyword(body=form.keywords.data, author=current_user)
+  File "<string>", line 4, in __init__
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/sqlalchemy/orm/state.py", line 433, in _initialize_instance
+    manager.dispatch.init_failure(self, args, kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/sqlalchemy/util/langhelpers.py", line 69, in __exit__
+    exc_value, with_traceback=exc_tb,
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/sqlalchemy/util/compat.py", line 178, in raise_
+    raise exception
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/sqlalchemy/orm/state.py", line 430, in _initialize_instance
+    return manager.original_init(*mixed[1:], **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/sqlalchemy/ext/declarative/base.py", line 840, in _declarative_constructor
+    "%r is an invalid keyword argument for %s" % (k, cls_.__name__)
+TypeError: 'author' is an invalid keyword argument for Keyword
+2020-05-10 19:15:54,582 INFO: News Aggregation startup [in /Users/alfredtingey/news-aggregation-system-master/news-aggregation-system/news_agg_app/app/__init__.py:61]
+2020-05-10 19:16:03,388 INFO: News Aggregation startup [in /Users/alfredtingey/news-aggregation-system-master/news-aggregation-system/news_agg_app/app/__init__.py:61]
+2020-05-10 19:17:00,714 INFO: News Aggregation startup [in /Users/alfredtingey/news-aggregation-system-master/news-aggregation-system/news_agg_app/app/__init__.py:61]
+2020-05-10 19:17:39,648 ERROR: Exception on /recommend [GET] [in /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py:1891]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask_login/utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/alfredtingey/news-aggregation-system-master/news-aggregation-system/news_agg_app/app/routes.py", line 459, in recommend
+    user = rec_sys_routes.User_recommend(user_key_words, date, w2v_model="news_w2v") #"GoogleNews","news_w2v"
+  File "/Users/alfredtingey/news-aggregation-system-master/news-aggregation-system/news_agg_app/app/rec_sys_routes.py", line 143, in __init__
+    self.recommendations = self.show_recommendations()
+  File "/Users/alfredtingey/news-aggregation-system-master/news-aggregation-system/news_agg_app/app/rec_sys_routes.py", line 328, in show_recommendations
+    results_df = pd.concat(results)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/pandas/core/reshape/concat.py", line 255, in concat
+    sort=sort,
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/pandas/core/reshape/concat.py", line 304, in __init__
+    raise ValueError("No objects to concatenate")
+ValueError: No objects to concatenate
+2020-05-10 19:21:34,725 INFO: News Aggregation startup [in /Users/alfredtingey/news-aggregation-system-master/news-aggregation-system/news_agg_app/app/__init__.py:61]
+2020-05-10 19:27:04,019 INFO: News Aggregation startup [in /Users/alfredtingey/news-aggregation-system-master/news-aggregation-system/news_agg_app/app/__init__.py:61]
+2020-05-10 19:38:10,039 INFO: News Aggregation startup [in /Users/alfredtingey/news-aggregation-system-master/news-aggregation-system/news_agg_app/app/__init__.py:61]

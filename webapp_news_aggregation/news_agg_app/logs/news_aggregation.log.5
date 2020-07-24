@@ -1,0 +1,115 @@
+2020-05-13 19:08:41,264 ERROR: Exception on /recommend [GET] [in /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py:1891]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask_login/utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/alfredtingey/news-aggregation-system/news_agg_app/app/routes.py", line 465, in recommend
+    rec_sys_routes.news_panda()
+  File "/Users/alfredtingey/news-aggregation-system/news_agg_app/app/rec_sys_routes.py", line 18, in news_panda
+    with open(news_history_path, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/alfredtingey/news-aggregation-system-master/news-aggregation-system/news_agg_app/news_history.json'
+2020-05-13 19:09:25,620 INFO: News Aggregation startup [in /Users/alfredtingey/news-aggregation-system/news_agg_app/app/__init__.py:61]
+2020-05-13 20:46:05,157 INFO: News Aggregation startup [in /Users/alfredtingey/news-aggregation-system/news_agg_app/app/__init__.py:61]
+2020-05-15 12:14:38,014 INFO: News Aggregation startup [in /Users/alfredtingey/news-aggregation-system/news_agg_app/app/__init__.py:61]
+2020-05-15 12:20:05,304 INFO: News Aggregation startup [in /Users/alfredtingey/news-aggregation-system/news_agg_app/app/__init__.py:61]
+2020-05-15 17:14:45,158 INFO: News Aggregation startup [in /Users/alfredtingey/news-aggregation-system/news_agg_app/app/__init__.py:61]
+2020-05-15 17:31:50,251 INFO: News Aggregation startup [in /Users/alfredtingey/news-aggregation-system/news_agg_app/app/__init__.py:61]
+2020-05-15 17:38:45,975 INFO: News Aggregation startup [in /Users/alfredtingey/news-aggregation-system/news_agg_app/app/__init__.py:61]
+2020-05-15 17:38:55,182 ERROR: Exception on /category2/Politics [GET] [in /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py:1891]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask_login/utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/alfredtingey/news-aggregation-system/news_agg_app/app/routes.py", line 275, in category2
+    json2db.dbimport('/Users/alfredtingey/news-aggregation-system/news_agg_app/news_history.json')
+  File "/Users/alfredtingey/news-aggregation-system/news_agg_app/app/json2db.py", line 37, in dbimport
+    pic_link = data[outlet][category][link]['pic']
+KeyError: 'pic'
+2020-05-15 17:41:03,361 INFO: News Aggregation startup [in /Users/alfredtingey/news-aggregation-system/news_agg_app/app/__init__.py:61]
+2020-05-15 17:41:14,842 ERROR: Exception on /category2/Politics [GET] [in /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py:1891]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask_login/utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/alfredtingey/news-aggregation-system/news_agg_app/app/routes.py", line 275, in category2
+    json2db.dbimport('/Users/alfredtingey/news-aggregation-system/news_agg_app/news_history.json')
+  File "/Users/alfredtingey/news-aggregation-system/news_agg_app/app/json2db.py", line 25, in dbimport
+    data = data[date]
+KeyError: '20200208'
+2020-05-15 17:42:01,618 INFO: News Aggregation startup [in /Users/alfredtingey/news-aggregation-system/news_agg_app/app/__init__.py:61]
+2020-05-15 17:42:10,584 ERROR: Exception on /category2/Politics [GET] [in /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py:1891]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask_login/utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/alfredtingey/news-aggregation-system/news_agg_app/app/routes.py", line 275, in category2
+    json2db.dbimport('/Users/alfredtingey/news-aggregation-system/news_agg_app/news_history.json')
+  File "/Users/alfredtingey/news-aggregation-system/news_agg_app/app/json2db.py", line 26, in dbimport
+    print(data[date])
+KeyError: '20200208'
+2020-05-15 17:42:36,344 INFO: News Aggregation startup [in /Users/alfredtingey/news-aggregation-system/news_agg_app/app/__init__.py:61]
+2020-05-15 17:42:45,733 ERROR: Exception on /category2/Politics [GET] [in /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py:1891]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask_login/utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/alfredtingey/news-aggregation-system/news_agg_app/app/routes.py", line 275, in category2
+    json2db.dbimport('/Users/alfredtingey/news-aggregation-system/news_agg_app/news_history.json')
+  File "/Users/alfredtingey/news-aggregation-system/news_agg_app/app/json2db.py", line 26, in dbimport
+    print(data[date].keys())
+KeyError: '20200208'

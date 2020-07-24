@@ -1,0 +1,12 @@
+{%for category in categories%}
+<table class="table table-hover">
+     <tr>
+         <td width="20px">
+               <br>
+               <font size="4"><a href="{{ url_for('topics', category=category) }}">{{category}}</a></font>
+               <br>
+           <br>
+         </td>
+     </tr>
+{%endfor%}
+ </table>

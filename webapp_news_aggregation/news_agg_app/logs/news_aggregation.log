@@ -1,0 +1,80 @@
+2020-05-16 15:15:44,668 INFO: News Aggregation startup [in /Users/alfredtingey/news-aggregation-system/news_agg_app/app/__init__.py:61]
+2020-05-16 15:17:48,264 INFO: News Aggregation startup [in /Users/alfredtingey/news-aggregation-system/news_agg_app/app/__init__.py:61]
+2020-05-16 15:18:00,758 ERROR: Exception on /search [GET] [in /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py:1891]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask_login/utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/alfredtingey/news-aggregation-system/news_agg_app/app/routes.py", line 122, in search
+    guardian_list.append((link,title,summary,outlet,language, new, pic_link, date))
+NameError: name 'date' is not defined
+2020-05-16 15:18:05,290 ERROR: Exception on /search [GET] [in /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py:1891]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask_login/utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/alfredtingey/news-aggregation-system/news_agg_app/app/routes.py", line 122, in search
+    guardian_list.append((link,title,summary,outlet,language, new, pic_link, date))
+NameError: name 'date' is not defined
+2020-05-16 15:18:33,964 INFO: News Aggregation startup [in /Users/alfredtingey/news-aggregation-system/news_agg_app/app/__init__.py:61]
+2020-05-16 15:49:29,184 INFO: News Aggregation startup [in /Users/alfredtingey/news-aggregation-system/news_agg_app/app/__init__.py:61]
+2020-05-16 15:51:50,625 INFO: News Aggregation startup [in /Users/alfredtingey/news-aggregation-system/news_agg_app/app/__init__.py:61]
+2020-05-16 17:44:36,890 INFO: News Aggregation startup [in /Users/alfredtingey/news-aggregation-system/news_agg_app/app/__init__.py:61]
+2020-05-16 17:44:55,819 INFO: News Aggregation startup [in /Users/alfredtingey/news-aggregation-system/news_agg_app/app/__init__.py:61]
+2020-05-16 17:45:08,164 ERROR: Exception on /news_sites [GET] [in /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py:1891]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask_login/utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/alfredtingey/news-aggregation-system/news_agg_app/app/routes.py", line 263, in news_sites
+    news = news_agg.get_news()
+  File "/Users/alfredtingey/news-aggregation-system/news_agg_app/app/models.py", line 99, in get_news
+    with open('/Users/alfredtingey/news-aggregation-system/news_agg_app/Backupnews_in_20200417.json','r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/alfredtingey/news-aggregation-system/news_agg_app/Backupnews_in_20200417.json'
+2020-05-16 17:47:09,421 INFO: News Aggregation startup [in /Users/alfredtingey/news-aggregation-system/news_agg_app/app/__init__.py:61]
+2020-05-16 17:49:55,558 INFO: News Aggregation startup [in /Users/alfredtingey/news-aggregation-system/news_agg_app/app/__init__.py:61]
+2020-05-16 18:24:06,323 INFO: News Aggregation startup [in /Users/alfredtingey/news-aggregation-system/news_agg_app/app/__init__.py:61]
+2020-05-16 18:26:02,662 INFO: News Aggregation startup [in /Users/alfredtingey/news-aggregation-system/news_agg_app/app/__init__.py:61]
+2020-05-16 18:27:11,561 INFO: News Aggregation startup [in /Users/alfredtingey/news-aggregation-system/news_agg_app/app/__init__.py:61]
+2020-05-16 18:28:49,002 INFO: News Aggregation startup [in /Users/alfredtingey/news-aggregation-system/news_agg_app/app/__init__.py:61]
+2020-05-16 18:39:16,922 INFO: News Aggregation startup [in /Users/alfredtingey/news-aggregation-system/news_agg_app/app/__init__.py:61]
+2020-05-16 18:40:46,672 INFO: News Aggregation startup [in /Users/alfredtingey/news-aggregation-system/news_agg_app/app/__init__.py:61]
+2020-05-16 18:40:53,595 INFO: News Aggregation startup [in /Users/alfredtingey/news-aggregation-system/news_agg_app/app/__init__.py:61]
+2020-05-16 18:51:52,862 INFO: News Aggregation startup [in /Users/alfredtingey/news-aggregation-system/news_agg_app/app/__init__.py:61]
+2020-05-16 18:54:15,076 INFO: News Aggregation startup [in /Users/alfredtingey/news-aggregation-system/news_agg_app/app/__init__.py:61]
+2020-05-16 18:56:03,286 INFO: News Aggregation startup [in /Users/alfredtingey/news-aggregation-system/news_agg_app/app/__init__.py:61]
+2020-05-16 18:57:25,618 INFO: News Aggregation startup [in /Users/alfredtingey/news-aggregation-system/news_agg_app/app/__init__.py:61]
+2020-05-17 15:21:26,965 INFO: News Aggregation startup [in /Users/alfredtingey/news-aggregation-system/news_agg_app/app/__init__.py:61]

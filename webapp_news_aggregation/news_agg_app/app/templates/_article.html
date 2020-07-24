@@ -1,0 +1,17 @@
+<table class="table table-hover">
+      <tr>
+          <td width="70px">
+              <a href="{{ url_for('user', username=article.author.username) }}">
+                  <img src="{{ article.author.avatar(70) }}" />
+              </a>
+          </td>
+          <td>
+              <a href="{{ url_for('user', username=article.author.username) }}">
+                  {{ article.author.username }}
+              </a>
+              read:
+              <br>
+              <a href="{{ url_for('count', title = article.title) }}"> {{article.title}}</a>
+          </td>
+      </tr>
+  </table>
